@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Racing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFg-Uu-gvn">
+                                <rect key="frame" x="10" y="69" width="124.5" height="768"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-j0-V0O">
+                                <rect key="frame" x="144.5" y="69" width="125" height="768"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpt-9B-8eS">
+                                <rect key="frame" x="279.5" y="69" width="124.5" height="768"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carImg" translatesAutoresizingMaskIntoConstraints="NO" id="EeQ-I0-aKP">
+                                <rect key="frame" x="0.0" y="687" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="iug-bf-G6X"/>
+                                    <constraint firstAttribute="width" constant="75" id="m06-Ut-nsn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dpt-9B-8eS" firstAttribute="width" secondItem="aFg-Uu-gvn" secondAttribute="width" id="1uw-FN-Gyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EeQ-I0-aKP" secondAttribute="bottom" constant="100" id="560-qA-yZC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aFg-Uu-gvn" secondAttribute="bottom" constant="25" id="7UP-Pn-ws1"/>
+                            <constraint firstItem="aFg-Uu-gvn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="CQP-s4-q1I"/>
+                            <constraint firstItem="dpt-9B-8eS" firstAttribute="leading" secondItem="eIk-j0-V0O" secondAttribute="trailing" constant="10" id="JJx-eC-7DC"/>
+                            <constraint firstItem="eIk-j0-V0O" firstAttribute="leading" secondItem="aFg-Uu-gvn" secondAttribute="trailing" constant="10" id="PIf-Q5-8NI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpt-9B-8eS" secondAttribute="trailing" constant="10" id="Pzc-IE-kOZ"/>
+                            <constraint firstItem="dpt-9B-8eS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Rl3-5Y-ghp"/>
+                            <constraint firstItem="eIk-j0-V0O" firstAttribute="width" secondItem="aFg-Uu-gvn" secondAttribute="width" id="ZKy-0J-cc0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eIk-j0-V0O" secondAttribute="bottom" constant="25" id="gSh-qU-ldc"/>
+                            <constraint firstItem="aFg-Uu-gvn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hbb-ee-Nuy"/>
+                            <constraint firstItem="EeQ-I0-aKP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iVM-0v-PRH"/>
+                            <constraint firstItem="eIk-j0-V0O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="m4m-1M-oRb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dpt-9B-8eS" secondAttribute="bottom" constant="25" id="rsG-MU-W7v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="carImg" destination="EeQ-I0-aKP" id="VXo-TV-b0d"/>
+                        <outlet property="centerView" destination="eIk-j0-V0O" id="qO2-Qn-Wxu"/>
+                        <outlet property="leftView" destination="aFg-Uu-gvn" id="AYW-6D-qWc"/>
+                        <outlet property="rightView" destination="dpt-9B-8eS" id="ovp-aD-8ui"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="carImg" width="512" height="512"/>
+    </resources>
 </document>
